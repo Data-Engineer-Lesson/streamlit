@@ -48,7 +48,3 @@ st.altair_chart(chart)
 plt.hist(df['product_price'], bins=20)
 plt.title('Histogram')
 st.pyplot()
-
-fig, ax = plt.subplots()
-sns.heatmap(df.corr(), annot=True, fmt=".2f", ax=ax)
-st.pyplot(fig)
